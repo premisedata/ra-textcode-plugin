@@ -674,45 +674,5 @@
       "project": "RIDE",
       "display_order": 7
     }
-  ],
-  "sample_coded_data": [
-    {
-      "id": 1,
-      "tagged_text": "They have improved, the movement of city transport, banks, and queues, you can save your time, they are improvements.",
-      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Greatest Negative Influence > NATO",
-      "dtg": "2025-01-15T10:30:00",
-      "username": "testuser",
-      "doc_filename": "DIANA_Ukraine_FG1_Kyiv.docx",
-      "participant_number": 1,
-      "user_comment": "Positive view of improvements",
-      "citation": null
-    },
-    {
-      "id": 2,
-      "tagged_text": "Political division is a serious problem in our country.",
-      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI > Political division is a serious problem",
-      "dtg": "2025-01-15T11:00:00",
-      "username": "testuser",
-      "doc_filename": "DIANA_Armenia_FG2_Yerevan.docx",
-      "participant_number": 2,
-      "user_comment": "",
-      "citation": null
-    },
-    {
-      "id": 3,
-      "tagged_text": "I get most of my news from social media platforms like Facebook and Twitter.",
-      "category_str": "Media Domain > Media Consumption > Social media",
-      "dtg": "2025-01-15T11:30:00",
-      "username": "testuser",
-      "doc_filename": "DIANA_Estonia_FG1_Tallinn.docx",
-      "participant_number": 3,
-      "user_comment": "Media consumption pattern",
-      "citation": null
-    }
-  ],
-  "export_info": {
-    "project": null,
-    "timestamp": "2025-01-15T12:00:00",
-    "note": "Test dataset for Word Add-in development"
-  }
+  ]
 }
