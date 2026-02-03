@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeText</title>
+    
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="taskpane.css" />
+</head>
+<body>
+    <div id="content-header">
+        <h1>CodeText</h1>
+        <p>Version 1.48</p>
+    </div>
+    
+    <div id="status" class="status-info">Initializing...</div>
+    
+    <div id="main-content" style="display: none;">
+        <div class="section">
+            <h2>Selected Text</h2>
+            <div style="position: relative;">
+                <div id="text-loading-spinner" class="loading-spinner" style="display: none;">
+                    <div class="spinner"></div>
+                </div>
+                <div id="selected-text-display" class="text-display">Select text in your document...</div>
+            </div>
+            <button id="get-selection-btn" class="btn-secondary">Refresh Selection</button>
+        </div>
+        
+        <div class="section">
+            <h2>Category Selection</h2>
+            <div id="project-selector" style="margin-bottom: 12px;">
+                <label>Project: </label>
+                <select id="project-select">
+                    <option value="DIANA">DIANA</option>
+                    <option value="JOHNSON">JOHNSON</option>
+                    <option value="JOHNSON2">JOHNSON2</option>
+                    <option value="RIDE">RIDE</option>
+                </select>
+            </div>
+            <div id="debug-info" style="font-size: 11px; color: #666; margin-bottom: 8px; padding: 4px; background: #f0f0f0; border-radius: 3px; display: none;">
+                <strong>Debug:</strong> <span id="debug-text">Loading...</span>
+            </div>
+            <div id="category-tree" class="category-tree"></div>
+            <input type="text" id="category-search" placeholder="Search categories..." />
+        </div>
+        
+        <div class="section">
+            <h2>Code Text</h2>
+            <textarea id="user-comment" placeholder="Optional comment..." rows="3"></textarea>
+            <button id="code-text-btn" class="btn-primary" disabled>Code Selected Text</button>
+        </div>
+        
+        <div class="section">
+            <h2>Actions</h2>
+            <button id="import-categories-btn" class="btn-secondary">Import Categories</button>
+            <button id="generate-report-btn" class="btn-secondary">Generate Report</button>
+            <button id="export-data-btn" class="btn-secondary">Export Data</button>
+            <button id="clear-db-btn" class="btn-danger">Clear Database</button>
+        </div>
+        
+        <div class="section">
+            <h2>Output</h2>
+            <div id="output" class="output-area"></div>
+        </div>
+    </div>
+    
+    <!-- Cache-busting: increment version number when making changes -->
+    <!-- Version 48: Added loading spinner for better perceived performance -->
+    <!-- When updating: increment v=XX and update Version X.XX in the <p> tag above -->
+    <script src="taskpane-simple.js?v=48"></script>
+</body>
+</html>
+

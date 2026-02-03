@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Test</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+</head>
+<body>
+    <h1>Debug Test Page</h1>
+    <div id="status">Loading...</div>
+    <div id="output"></div>
+    
+    <script>
+        const output = document.getElementById('output');
+        const status = document.getElementById('status');
+        
+        // Test 1: Check if page loads
+        output.innerHTML += '<p>✓ Page loaded</p>';
+        
+        // Test 2: Check Office.js
+        Office.onReady((info) => {
+            if (info.host === Office.HostType.Word) {
+                status.textContent = 'Office.js loaded - Word detected';
+                output.innerHTML += '<p>✓ Office.js loaded</p>';
+                output.innerHTML += '<p>✓ Word host detected</p>';
+            } else {
+                status.textContent = 'Office.js loaded - Not in Word';
+                output.innerHTML += '<p>✓ Office.js loaded</p>';
+                output.innerHTML += '<p>✗ Not running in Word (host: ' + info.host + ')</p>';
+            }
+        }).catch((error) => {
+            status.textContent = 'Office.js failed to load';
+            output.innerHTML += '<p>✗ Office.js error: ' + error.message + '</p>';
+        });
+        
+        // Test 3: Check Pyodide
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js';
+        script.onload = () => {
+            output.innerHTML += '<p>✓ Pyodide script loaded</p>';
+            loadPyodide().then(() => {
+                output.innerHTML += '<p>✓ Pyodide initialized</p>';
+            }).catch((error) => {
+                output.innerHTML += '<p>✗ Pyodide init error: ' + error.message + '</p>';
+            });
+        };
+        script.onerror = () => {
+            output.innerHTML += '<p>✗ Pyodide script failed to load</p>';
+        };
+        document.head.appendChild(script);
+        
+        // Test 4: Check DuckDB
+        const duckdbScript = document.createElement('script');
+        duckdbScript.src = 'https://cdn.jsdelivr.net/npm/duckdb@0.9.2/dist/duckdb-browser.js';
+        duckdbScript.onload = () => {
+            output.innerHTML += '<p>✓ DuckDB script loaded</p>';
+            try {
+                if (typeof duckdb !== 'undefined') {
+                    output.innerHTML += '<p>✓ DuckDB available</p>';
+                } else {
+                    output.innerHTML += '<p>✗ DuckDB not available</p>';
+                }
+            } catch (error) {
+                output.innerHTML += '<p>✗ DuckDB error: ' + error.message + '</p>';
+            }
+        };
+        duckdbScript.onerror = () => {
+            output.innerHTML += '<p>✗ DuckDB script failed to load</p>';
+        };
+        document.head.appendChild(duckdbScript);
+    </script>
+</body>
+</html>
+

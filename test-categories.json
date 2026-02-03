@@ -1,0 +1,718 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Political Domain",
+      "country": null,
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 2,
+      "name": "Political Indicators of Vulnerability to FMI",
+      "country": null,
+      "parent_id": 1,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 3,
+      "name": "Political division is a serious problem",
+      "country": null,
+      "parent_id": 2,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 4,
+      "name": "Lack of political consensus",
+      "country": null,
+      "parent_id": 2,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#F38181"
+    },
+    {
+      "id": 5,
+      "name": "Government instability",
+      "country": null,
+      "parent_id": 2,
+      "project": "DIANA",
+      "display_order": 3,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 6,
+      "name": "Economic Domain",
+      "country": null,
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 7,
+      "name": "Economic Indicators of Vulnerability to FMI",
+      "country": null,
+      "parent_id": 6,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 8,
+      "name": "Greatest Negative Influence",
+      "country": null,
+      "parent_id": 7,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#4D96FF"
+    },
+    {
+      "id": 9,
+      "name": "NATO",
+      "country": null,
+      "parent_id": 8,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#9B59B6"
+    },
+    {
+      "id": 10,
+      "name": "EU",
+      "country": null,
+      "parent_id": 8,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#E74C3C"
+    },
+    {
+      "id": 11,
+      "name": "Economic challenges",
+      "country": null,
+      "parent_id": 7,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 12,
+      "name": "Unemployment",
+      "country": null,
+      "parent_id": 11,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 13,
+      "name": "Inflation",
+      "country": null,
+      "parent_id": 11,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 14,
+      "name": "Social Domain",
+      "country": null,
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 3,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 15,
+      "name": "Social Indicators of Vulnerability to FMI",
+      "country": null,
+      "parent_id": 14,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 16,
+      "name": "Social cohesion",
+      "country": null,
+      "parent_id": 15,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 17,
+      "name": "Education system",
+      "country": null,
+      "parent_id": 15,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#6BCF7F"
+    },
+    {
+      "id": 18,
+      "name": "Security Domain",
+      "country": null,
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 4,
+      "color": "#F38181"
+    },
+    {
+      "id": 19,
+      "name": "Security Indicators of Vulnerability to FMI",
+      "country": null,
+      "parent_id": 18,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#F38181"
+    },
+    {
+      "id": 20,
+      "name": "Military threats",
+      "country": null,
+      "parent_id": 19,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#E74C3C"
+    },
+    {
+      "id": 21,
+      "name": "Border security",
+      "country": null,
+      "parent_id": 19,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 22,
+      "name": "Media Domain",
+      "country": null,
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 5,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 23,
+      "name": "Media Consumption",
+      "country": null,
+      "parent_id": 22,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 24,
+      "name": "Traditional media",
+      "country": null,
+      "parent_id": 23,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#F38181"
+    },
+    {
+      "id": 25,
+      "name": "Social media",
+      "country": null,
+      "parent_id": 23,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 26,
+      "name": "Armenia-Specific Issues",
+      "country": "armenia",
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 6,
+      "color": "#FFD93D"
+    },
+    {
+      "id": 27,
+      "name": "Nagorno-Karabakh conflict",
+      "country": "armenia",
+      "parent_id": 26,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#6BCF7F"
+    },
+    {
+      "id": 28,
+      "name": "Ukraine-Specific Issues",
+      "country": "ukraine",
+      "parent_id": null,
+      "project": "DIANA",
+      "display_order": 7,
+      "color": "#4D96FF"
+    },
+    {
+      "id": 29,
+      "name": "War impact",
+      "country": "ukraine",
+      "parent_id": 28,
+      "project": "DIANA",
+      "display_order": 1,
+      "color": "#9B59B6"
+    },
+    {
+      "id": 30,
+      "name": "Refugee crisis",
+      "country": "ukraine",
+      "parent_id": 28,
+      "project": "DIANA",
+      "display_order": 2,
+      "color": "#E74C3C"
+    },
+    {
+      "id": 31,
+      "name": "Key Influencers",
+      "country": null,
+      "parent_id": null,
+      "project": "JOHNSON",
+      "display_order": 1,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 32,
+      "name": "Economic",
+      "country": null,
+      "parent_id": 31,
+      "project": "JOHNSON",
+      "display_order": 1,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 33,
+      "name": "Greatest Negative Influence",
+      "country": null,
+      "parent_id": 32,
+      "project": "JOHNSON",
+      "display_order": 1,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 34,
+      "name": "NATO",
+      "country": null,
+      "parent_id": 33,
+      "project": "JOHNSON",
+      "display_order": 1,
+      "color": "#F38181"
+    },
+    {
+      "id": 35,
+      "name": "Media Consumption",
+      "country": null,
+      "parent_id": null,
+      "project": "JOHNSON",
+      "display_order": 2,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 36,
+      "name": "Traditional media sources",
+      "country": null,
+      "parent_id": 35,
+      "project": "JOHNSON",
+      "display_order": 1,
+      "color": "#FFD93D"
+    },
+    {
+      "id": 37,
+      "name": "Social media platforms",
+      "country": null,
+      "parent_id": 35,
+      "project": "JOHNSON",
+      "display_order": 2,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 38,
+      "name": "Key Influencers",
+      "country": null,
+      "parent_id": null,
+      "project": "JOHNSON2",
+      "display_order": 1,
+      "color": "#4D96FF"
+    },
+    {
+      "id": 39,
+      "name": "Economic",
+      "country": null,
+      "parent_id": 38,
+      "project": "JOHNSON2",
+      "display_order": 1,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 40,
+      "name": "Political",
+      "country": null,
+      "parent_id": 38,
+      "project": "JOHNSON2",
+      "display_order": 2,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 41,
+      "name": "Media Consumption",
+      "country": null,
+      "parent_id": null,
+      "project": "JOHNSON2",
+      "display_order": 2,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 42,
+      "name": "Main Themes",
+      "country": null,
+      "parent_id": null,
+      "project": "RIDE",
+      "display_order": 1,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 43,
+      "name": "Recruitment",
+      "country": null,
+      "parent_id": 42,
+      "project": "RIDE",
+      "display_order": 1,
+      "color": "#95E1D3"
+    },
+    {
+      "id": 44,
+      "name": "Recruitment methods",
+      "country": null,
+      "parent_id": 43,
+      "project": "RIDE",
+      "display_order": 1,
+      "color": "#F38181"
+    },
+    {
+      "id": 45,
+      "name": "Recruitment channels",
+      "country": null,
+      "parent_id": 43,
+      "project": "RIDE",
+      "display_order": 2,
+      "color": "#AA96DA"
+    },
+    {
+      "id": 46,
+      "name": "Member Experience",
+      "country": null,
+      "parent_id": 42,
+      "project": "RIDE",
+      "display_order": 2,
+      "color": "#FFD93D"
+    },
+    {
+      "id": 47,
+      "name": "Current member experience",
+      "country": null,
+      "parent_id": 46,
+      "project": "RIDE",
+      "display_order": 1,
+      "color": "#6BCF7F"
+    },
+    {
+      "id": 48,
+      "name": "Former member experience",
+      "country": null,
+      "parent_id": 46,
+      "project": "RIDE",
+      "display_order": 2,
+      "color": "#4D96FF"
+    }
+  ],
+  "category_strings": [
+    {
+      "category_str": "Political Domain",
+      "project": "DIANA",
+      "display_order": 1
+    },
+    {
+      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI",
+      "project": "DIANA",
+      "display_order": 2
+    },
+    {
+      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI > Political division is a serious problem",
+      "project": "DIANA",
+      "display_order": 3
+    },
+    {
+      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI > Lack of political consensus",
+      "project": "DIANA",
+      "display_order": 4
+    },
+    {
+      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI > Government instability",
+      "project": "DIANA",
+      "display_order": 5
+    },
+    {
+      "category_str": "Economic Domain",
+      "project": "DIANA",
+      "display_order": 6
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI",
+      "project": "DIANA",
+      "display_order": 7
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Greatest Negative Influence",
+      "project": "DIANA",
+      "display_order": 8
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Greatest Negative Influence > NATO",
+      "project": "DIANA",
+      "display_order": 9
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Greatest Negative Influence > EU",
+      "project": "DIANA",
+      "display_order": 10
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Economic challenges",
+      "project": "DIANA",
+      "display_order": 11
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Economic challenges > Unemployment",
+      "project": "DIANA",
+      "display_order": 12
+    },
+    {
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Economic challenges > Inflation",
+      "project": "DIANA",
+      "display_order": 13
+    },
+    {
+      "category_str": "Social Domain",
+      "project": "DIANA",
+      "display_order": 14
+    },
+    {
+      "category_str": "Social Domain > Social Indicators of Vulnerability to FMI",
+      "project": "DIANA",
+      "display_order": 15
+    },
+    {
+      "category_str": "Social Domain > Social Indicators of Vulnerability to FMI > Social cohesion",
+      "project": "DIANA",
+      "display_order": 16
+    },
+    {
+      "category_str": "Social Domain > Social Indicators of Vulnerability to FMI > Education system",
+      "project": "DIANA",
+      "display_order": 17
+    },
+    {
+      "category_str": "Security Domain",
+      "project": "DIANA",
+      "display_order": 18
+    },
+    {
+      "category_str": "Security Domain > Security Indicators of Vulnerability to FMI",
+      "project": "DIANA",
+      "display_order": 19
+    },
+    {
+      "category_str": "Security Domain > Security Indicators of Vulnerability to FMI > Military threats",
+      "project": "DIANA",
+      "display_order": 20
+    },
+    {
+      "category_str": "Security Domain > Security Indicators of Vulnerability to FMI > Border security",
+      "project": "DIANA",
+      "display_order": 21
+    },
+    {
+      "category_str": "Media Domain",
+      "project": "DIANA",
+      "display_order": 22
+    },
+    {
+      "category_str": "Media Domain > Media Consumption",
+      "project": "DIANA",
+      "display_order": 23
+    },
+    {
+      "category_str": "Media Domain > Media Consumption > Traditional media",
+      "project": "DIANA",
+      "display_order": 24
+    },
+    {
+      "category_str": "Media Domain > Media Consumption > Social media",
+      "project": "DIANA",
+      "display_order": 25
+    },
+    {
+      "category_str": "Armenia-Specific Issues",
+      "project": "DIANA",
+      "display_order": 26
+    },
+    {
+      "category_str": "Armenia-Specific Issues > Nagorno-Karabakh conflict",
+      "project": "DIANA",
+      "display_order": 27
+    },
+    {
+      "category_str": "Ukraine-Specific Issues",
+      "project": "DIANA",
+      "display_order": 28
+    },
+    {
+      "category_str": "Ukraine-Specific Issues > War impact",
+      "project": "DIANA",
+      "display_order": 29
+    },
+    {
+      "category_str": "Ukraine-Specific Issues > Refugee crisis",
+      "project": "DIANA",
+      "display_order": 30
+    },
+    {
+      "category_str": "Key Influencers",
+      "project": "JOHNSON",
+      "display_order": 1
+    },
+    {
+      "category_str": "Key Influencers > Economic",
+      "project": "JOHNSON",
+      "display_order": 2
+    },
+    {
+      "category_str": "Key Influencers > Economic > Greatest Negative Influence",
+      "project": "JOHNSON",
+      "display_order": 3
+    },
+    {
+      "category_str": "Key Influencers > Economic > Greatest Negative Influence > NATO",
+      "project": "JOHNSON",
+      "display_order": 4
+    },
+    {
+      "category_str": "Media Consumption",
+      "project": "JOHNSON",
+      "display_order": 5
+    },
+    {
+      "category_str": "Media Consumption > Traditional media sources",
+      "project": "JOHNSON",
+      "display_order": 6
+    },
+    {
+      "category_str": "Media Consumption > Social media platforms",
+      "project": "JOHNSON",
+      "display_order": 7
+    },
+    {
+      "category_str": "Key Influencers",
+      "project": "JOHNSON2",
+      "display_order": 1
+    },
+    {
+      "category_str": "Key Influencers > Economic",
+      "project": "JOHNSON2",
+      "display_order": 2
+    },
+    {
+      "category_str": "Key Influencers > Political",
+      "project": "JOHNSON2",
+      "display_order": 3
+    },
+    {
+      "category_str": "Media Consumption",
+      "project": "JOHNSON2",
+      "display_order": 4
+    },
+    {
+      "category_str": "Main Themes",
+      "project": "RIDE",
+      "display_order": 1
+    },
+    {
+      "category_str": "Main Themes > Recruitment",
+      "project": "RIDE",
+      "display_order": 2
+    },
+    {
+      "category_str": "Main Themes > Recruitment > Recruitment methods",
+      "project": "RIDE",
+      "display_order": 3
+    },
+    {
+      "category_str": "Main Themes > Recruitment > Recruitment channels",
+      "project": "RIDE",
+      "display_order": 4
+    },
+    {
+      "category_str": "Main Themes > Member Experience",
+      "project": "RIDE",
+      "display_order": 5
+    },
+    {
+      "category_str": "Main Themes > Member Experience > Current member experience",
+      "project": "RIDE",
+      "display_order": 6
+    },
+    {
+      "category_str": "Main Themes > Member Experience > Former member experience",
+      "project": "RIDE",
+      "display_order": 7
+    }
+  ],
+  "sample_coded_data": [
+    {
+      "id": 1,
+      "tagged_text": "They have improved, the movement of city transport, banks, and queues, you can save your time, they are improvements.",
+      "category_str": "Economic Domain > Economic Indicators of Vulnerability to FMI > Greatest Negative Influence > NATO",
+      "dtg": "2025-01-15T10:30:00",
+      "username": "testuser",
+      "doc_filename": "DIANA_Ukraine_FG1_Kyiv.docx",
+      "participant_number": 1,
+      "user_comment": "Positive view of improvements",
+      "citation": null
+    },
+    {
+      "id": 2,
+      "tagged_text": "Political division is a serious problem in our country.",
+      "category_str": "Political Domain > Political Indicators of Vulnerability to FMI > Political division is a serious problem",
+      "dtg": "2025-01-15T11:00:00",
+      "username": "testuser",
+      "doc_filename": "DIANA_Armenia_FG2_Yerevan.docx",
+      "participant_number": 2,
+      "user_comment": "",
+      "citation": null
+    },
+    {
+      "id": 3,
+      "tagged_text": "I get most of my news from social media platforms like Facebook and Twitter.",
+      "category_str": "Media Domain > Media Consumption > Social media",
+      "dtg": "2025-01-15T11:30:00",
+      "username": "testuser",
+      "doc_filename": "DIANA_Estonia_FG1_Tallinn.docx",
+      "participant_number": 3,
+      "user_comment": "Media consumption pattern",
+      "citation": null
+    }
+  ],
+  "export_info": {
+    "project": null,
+    "timestamp": "2025-01-15T12:00:00",
+    "note": "Test dataset for Word Add-in development"
+  }
+}
