@@ -8,6 +8,7 @@ let selectedCategoryColor = '#FFFF00';
 let allCategories = [];
 let currentDocFilename = '';
 let currentParagraphText = '';
+let currentUsername = 'anonymous';
 
 Office.onReady((info) => {
     console.log('Office ready');
@@ -148,8 +149,33 @@ function createCitation(participantNumber, demographics, project) {
     return parts.length > 0 ? `(${parts.join(', ')})` : null;
 }
 
-function initApp() {
+async function initApp() {
     console.log('Init starting');
+    
+    // Authenticate user first (Entra ID handles authorization)
+    try {
+        document.getElementById('status').textContent = 'Authenticating...';
+        const user = await getUserProfile();
+        currentUsername = user.email || user.displayName || 'anonymous';
+        document.getElementById('user-display').textContent = `Signed in as: ${user.displayName}`;
+        console.log('User authenticated:', currentUsername);
+    } catch (error) {
+        console.error('Authentication failed:', error);
+        document.getElementById('user-display').textContent = '⚠️ Authentication failed';
+        document.getElementById('user-display').style.color = '#d32f2f';
+        document.getElementById('status').textContent = 'Authentication Error';
+        
+        // Check for specific error codes
+        if (error.message && error.message.includes('consent')) {
+            alert('Admin consent is required for this add-in. Please contact your IT administrator.');
+        } else if (error.message && error.message.includes('not authorized')) {
+            alert('You do not have permission to use this add-in. Please contact your administrator.');
+        } else {
+            alert('Authentication failed. Please ensure you are signed into Office 365.');
+        }
+        return; // Stop initialization
+    }
+    
     document.getElementById('main-content').style.display = 'block';
     document.getElementById('status').textContent = 'Loading categories...';
     
@@ -327,6 +353,7 @@ function codeText() {
         if (project) {
             commentText += `\nProject: ${project}`;
         }
+        commentText += `\nCoded by: ${currentUsername}`;
         commentText += `\nCoded: ${new Date().toLocaleString()}`;
         
         // Add pale yellow highlighting to all coded text FIRST (before comment)
@@ -351,7 +378,8 @@ function codeText() {
             citation: citation,
             project: project,
             country: country,
-            docFilename: currentDocFilename
+            docFilename: currentDocFilename,
+            username: currentUsername
         });
         
         let output = `Coded: "${selectedText.substring(0, 50)}..." as "${selectedCategory}"`;

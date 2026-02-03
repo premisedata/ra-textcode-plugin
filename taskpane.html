@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeText</title>
+    <title>RA Doc Tagging</title>
     
     <!-- Office JavaScript API -->
     <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
@@ -13,8 +13,11 @@
 </head>
 <body>
     <div id="content-header">
-        <h1>CodeText</h1>
-        <p>Version 1.48</p>
+        <h1>RA Doc Tagging</h1>
+        <p>Version 1.49</p>
+        <div id="user-info" style="font-size: 12px; color: #666; margin-top: 5px;">
+            <span id="user-display">Authenticating...</span>
+        </div>
     </div>
     
     <div id="status" class="status-info">Initializing...</div>
@@ -70,9 +73,10 @@
     </div>
     
     <!-- Cache-busting: increment version number when making changes -->
-    <!-- Version 48: Added loading spinner for better perceived performance -->
+    <!-- Version 49: Added Office 365 SSO authentication -->
     <!-- When updating: increment v=XX and update Version X.XX in the <p> tag above -->
-    <script src="taskpane-simple.js?v=48"></script>
+    <script src="auth.js?v=49"></script>
+    <script src="taskpane-simple.js?v=49"></script>
 </body>
 </html>
 

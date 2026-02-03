@@ -1,6 +1,6 @@
-# CodeText Word Add-in
+# RA Doc Tagging Add-in
 
-A Microsoft Word add-in for qualitative data coding with hierarchical categories, automatic participant parsing, and report generation.
+A Microsoft Word add-in for research analysis document tagging with hierarchical categories, automatic participant parsing, and report generation.
 
 ## Features
 
@@ -25,7 +25,7 @@ A Microsoft Word add-in for qualitative data coding with hierarchical categories
    - Save `manifest.xml` to: `%USERPROFILE%\AppData\Local\Microsoft\Office\16.0\Wef\`
    - Or use Word's **Insert > Add-ins > My Add-ins > Upload My Add-in**
 
-4. **Restart Word** and open the add-in from the Home tab
+4. **Restart Word** and open "RA Doc Tagging" from the Home tab
 
 ## Usage
 
